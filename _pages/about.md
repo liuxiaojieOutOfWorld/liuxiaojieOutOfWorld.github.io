@@ -21,7 +21,7 @@ redirect_from:
 \* for corresponding author, <sup>\#</sup> for equal contribution.
 
 - ``Arxiv`` [MobileRAG: Enhancing Mobile Agent with Retrieval-Augmented Generation](https://arxiv.org/abs/2509.03891), Gowen Loo, **Chang Liu**, Qinghong Yin, Xiang Chen, Jiawei Chen, Jingyuan Zhang, Yu Tian*.
-- ``Arxiv`` [Me-Agent: A Personalized Mobile Agent with Two-Level User Habit Learning for Enhanced Interaction](https://arxiv.org/abs/2601.20162), Shuoxin Wang, **Chang Liu**, Gowen Loo, Lifan Zheng, Kaiwen Wei, Xinyi Zeng, Jingyuan Zhang, Yu Tian
+- ``Arxiv`` [Me-Agent: A Personalized Mobile Agent with Two-Level User Habit Learning for Enhanced Interaction](https://arxiv.org/abs/2601.20162), Shuoxin Wang, **Chang Liu**, Gowen Loo, Lifan Zheng, Kaiwen Wei, Xinyi Zeng, Jingyuan Zhang, Yu Tian.
 
 
 # Projects
