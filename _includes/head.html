@@ -8,6 +8,13 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    try {
+      var lang = localStorage.getItem('site-lang') === 'zh' ? 'zh' : 'en';
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    } catch (e) {}
+  })();
 </script>
 
 <!-- For all browsers -->

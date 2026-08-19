@@ -10,7 +10,12 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.bio %}
+      <p class="author__bio">
+        <span class="i18n-zh">{{ author.bio }}</span>
+        <span class="i18n-en">{{ author.bio_en | default: author.bio }}</span>
+      </p>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
@@ -20,7 +25,11 @@
         <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
       {% endif %}
       {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
+        <li>
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
+          <span class="i18n-zh">{{ author.location }}</span>
+          <span class="i18n-en">{{ author.location_en | default: author.location }}</span>
+        </li>
       {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
@@ -31,6 +40,14 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
+      <li>
+        <a class="i18n-zh" href="{{ '/cv/刘畅-香港理工大学硕士-计算机科学与技术.pdf' | relative_url }}">
+          <i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> 简历
+        </a>
+        <a class="i18n-en" href="{{ '/cv/LiuChang_polyu_msc_cs.pdf' | relative_url }}">
+          <i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> CV
+        </a>
+      </li>
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
@@ -126,6 +143,12 @@
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
+      <a class="i18n-zh" href="{{ '/cv/刘畅-香港理工大学硕士-计算机科学与技术.pdf' | relative_url }}" title="简历">
+        <i class="fas fa-fw fa-file-alt" aria-hidden="true"></i>
+      </a>
+      <a class="i18n-en" href="{{ '/cv/LiuChang_polyu_msc_cs.pdf' | relative_url }}" title="CV">
+        <i class="fas fa-fw fa-file-alt" aria-hidden="true"></i>
+      </a>
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>
       {% endif %}

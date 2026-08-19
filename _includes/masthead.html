@@ -5,11 +5,20 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}">
+                <span class="i18n-zh">{{ link.title_zh | default: link.title }}</span>
+                <span class="i18n-en">{{ link.title_en | default: link.title }}</span>
+              </a>
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="is-active">EN</button>
+        <button type="button" data-lang="zh">中文</button>
+      </div>
     </div>
   </div>
 </div>

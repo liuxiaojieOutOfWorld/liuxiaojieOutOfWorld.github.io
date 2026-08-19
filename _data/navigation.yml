@@ -1,17 +1,26 @@
 # main links
 main:
 
-  - title: "About me"
+  - title_zh: "关于我"
+    title_en: "About"
     url: "#about-me"
 
-  - title: "Publications"
+  - title_zh: "论文"
+    title_en: "Publications"
     url: "#publications"
 
-  - title: "Projects"
+  - title_zh: "实习"
+    title_en: "Experience"
+    url: "#experience"
+
+  - title_zh: "项目"
+    title_en: "Projects"
     url: "#projects"
 
-  - title: "Awards"
+  - title_zh: "荣誉"
+    title_en: "Awards"
     url: "#awards"
 
-  - title: "Skills"
+  - title_zh: "技能"
+    title_en: "Skills"
     url: "#skills"
